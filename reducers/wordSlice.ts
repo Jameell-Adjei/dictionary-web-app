@@ -39,4 +39,5 @@ export const wordSlice = createSlice({
 
 
 export default wordSlice.reducer;
-export const wordSelector = (state: RootState)=> state.wordData;
+export const meaningListSelector = (state: RootState)=> state.wordData.meaningList;
+export const currentSearchedWord = (state: RootState)=> state.wordData.word;
