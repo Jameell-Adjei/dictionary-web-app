@@ -1,5 +1,5 @@
 @use './abstracts/variables';
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;800&display=swap');
 * {
     box-sizing: border-box;
     margin: 0; 
@@ -7,4 +7,7 @@
 
 :root {
     background-color: variables.$primary-dark-color;
+    font-family: 'Inconsolata', monospace;
+    color: variables.$primary-text-dark;
+    padding: 2rem;
 }
