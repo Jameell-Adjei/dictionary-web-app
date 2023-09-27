@@ -2,6 +2,7 @@ import { currentSearchedWord, meaningListSelector } from "@/reducers/wordSlice";
 import { useSelector } from "react-redux";
 import Meaning from "./Meaning";
 import { useAppSelector } from "@/reducers/store";
+import Synonyms from "./Synonyms";
 
 const MeaningList = () => {
   const meaningList = useSelector(meaningListSelector);
@@ -13,15 +14,7 @@ const MeaningList = () => {
         meaningList.map((meaning, i) => {
           return (
             <Meaning key={i} data={meaning}>
-              <p>Synonyms</p>
-              {meaning.synonyms !== undefined &&
-                meaning.synonyms.map((synonym) => {
-                  return (
-                    <>
-                      <p>{synonym}</p>
-                    </>
-                  );
-                })}
+              <Synonyms data={meaning.synonyms}  />
             </Meaning>
           );
         })}
