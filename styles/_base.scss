@@ -9,5 +9,9 @@
     background-color: variables.$primary-dark-color;
     font-family: 'Inconsolata', monospace;
     color: variables.$primary-text-dark;
-    padding: 2rem;
+    padding: 1rem;
+}
+
+section {
+    padding: 0.5rem 0;
 }

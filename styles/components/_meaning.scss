@@ -11,6 +11,7 @@
     list-style: none;
     padding: 0.5rem 0;
     display: flex;
+    line-height: 24px;
 
     // Custom marker for the bullet point to control the distance between the bullet point and the text
     &::before {
@@ -32,12 +33,16 @@
   position: relative;
   overflow: hidden;
   display: block;
+  padding: 1.5rem 0;
 }
 
-// CSS Code from https://codepen.io/danrigsby/pen/waOOvw
 span {
   display: block;
   position: relative;
+  font-size: 18px;
+  font-weight: bold;
+
+  // CSS Code from https://codepen.io/danrigsby/pen/waOOvw
   &:after {
     content: "";
     position: absolute;

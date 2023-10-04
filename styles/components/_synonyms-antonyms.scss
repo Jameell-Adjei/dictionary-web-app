@@ -1,0 +1,17 @@
+@use '../abstracts/variables';
+
+
+.wordContainer {
+    display: flex;
+    gap: 0.3rem 1rem;
+    flex-wrap: wrap;
+}
+
+.word-label {
+    color: variables.$accent-color;
+}
+
+.word {
+    color: variables.$secondary-color;
+    font-weight: bold;
+}
